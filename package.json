@@ -1,0 +1,24 @@
+{
+  "name": "google-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrTurko/google-page.git"
+  },
+  "author": "andrturko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrTurko/google-page/issues"
+  },
+  "homepage": "https://github.com/AndrTurko/google-page#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
