@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  margin-top: 16px;
+  vertical-align: middle; }
+  .header a {
+    text-decoration-line: none; }
+
+.header-link {
+  text-decoration-line: none;
+  font-family: arial,sans-serif;
+  color: black;
+  text-decoration-style: solid;
+  text-decoration-color: black;
+  font-size: 13px; }
+  .header-link:hover {
+    text-decoration: underline;
+    opacity: 0.75; }
+
+.header-left {
+  display: flex;
+  width: 100px;
+  justify-content: space-around;
+  margin-left: 10px; }
+  .header-left .header-link {
+    opacity: 0.75; }
+
+.header-right {
+  display: flex;
+  width: 220px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 30px; }
+
+.apps-button {
+  display: inline-block;
+  outline: none;
+  vertical-align: middle;
+  box-sizing: border-box;
+  height: 30px;
+  width: 30px;
+  opacity: .55;
+  background: url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+  background-position: -132px -38px;
+  background-size: 528px 68px;
+  cursor: pointer; }
+  .apps-button:hover {
+    opacity: .85; }
+
+.sign-in-button {
+  display: flex;
+  width: 70px;
+  height: 30px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  color: #fff !important;
+  opacity: 1 !important;
+  font-weight: bold;
+  font-family: arial,sans-serif;
+  border: 1px solid #4285f4;
+  border-radius: 2px;
+  background: #4584ED; }
+  .sign-in-button:hover {
+    text-decoration: none;
+    opacity: 0; }
+
+.popover {
+  position: relative;
+  display: block;
+  visibility: hidden; }
+
+.popover-content {
+  display: flex;
+  align-content: space-between;
+  flex-direction: column;
+  width: 320px;
+  height: 596px;
+  position: absolute;
+  left: -207px;
+  top: 15px;
+  border: 1px solid #ccc;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); }
+
+.popover-arrow-back {
+  border-color: transparent;
+  border-style: dashed dashed solid;
+  border-width: 0 8.5px 8.5px;
+  position: absolute;
+  left: 6.5px;
+  z-index: 1;
+  height: 0;
+  width: 0;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  top: 6px; }
+
+.popover-arrow-front {
+  border-color: transparent;
+  border-bottom-color: #fff;
+  border-style: dashed dashed solid;
+  border-width: 0 8.5px 8.5px;
+  position: absolute;
+  left: 6.5px;
+  top: 7px;
+  z-index: 1;
+  height: 0;
+  width: 0; }
+
+.visible {
+  visibility: visible; }
+
+.list-apps {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 28px;
+  flex-wrap: wrap; }
+  .list-apps li {
+    height: 100px; }
+
+.app-card {
+  display: block;
+  padding: 1px;
+  width: 86px;
+  box-sizing: border-box;
+  height: 86px; }
+  .app-card:hover {
+    outline: 1px #e5e5e5 solid; }
+
+.app-icon {
+  margin: 0 auto;
+  height: 64px;
+  width: 64px;
+  background-image: url(https://ssl.gstatic.com/gb/images/p1_82e7352c.png);
+  background-size: 64px 2410px; }
+  .app-icon.account {
+    background-position-y: -69px; }
+  .app-icon.search {
+    background-position-y: -1656px; }
+  .app-icon.maps {
+    background-position-y: -897px; }
+  .app-icon.youtube {
+    background-position-y: -1311px; }
+  .app-icon.play {
+    background-position-y: -1518px; }
+  .app-icon.news {
+    background-position-y: -207px; }
+  .app-icon.gmail {
+    background-position-y: -345px; }
+  .app-icon.contacts {
+    background-position-y: -1656px; }
+  .app-icon.drive {
+    background-position-y: -1449px; }
+  .app-icon.calendar {
+    background-position-y: -1242px; }
+  .app-icon.google-plus {
+    background-position-y: -1035px; }
+  .app-icon.translate {
+    background-position-y: -690px; }
+  .app-icon.photos {
+    background-position-y: -414px; }
+
+.app-title {
+  height: 20px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: arial,sans-serif;
+  font-size: 13px;
+  text-decoration: none; }
+  .app-title:visited {
+    color: rgba(0, 0, 0, 0.87); }
+
+.more-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  color: rgba(0, 0, 0, 0.87);
+  background: #f5f5f5;
+  cursor: pointer;
+  font-family: arial,sans-serif;
+  font-size: 13px; }
+  .more-button:visited {
+    text-decoration: none; }
