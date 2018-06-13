@@ -1,7 +1,15 @@
 * 
   margin: 0
   padding: 0
-  
+
+body 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  font-family: arial,sans-serif
+  font-size: 13px
+
 .header
   display: flex;
   align-items: center
@@ -14,11 +22,9 @@
 
 .header-link
   text-decoration-line: none
-  font-family: arial,sans-serif
   color: rgb(0, 0, 0)
   text-decoration-style: solid
   text-decoration-color: rgb(0 , 0, 0)
-  font-size: 13px
   &:hover
     text-decoration: underline;
     opacity: 0.75 
@@ -47,7 +53,7 @@
   height: 30px
   width: 30px
   opacity: .55
-  background: url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png) 
+  background: url(../img/apps-button.png) 
   background-position: -132px -38px
   background-size: 528px 68px
   cursor: pointer
@@ -64,7 +70,6 @@
   color: #fff !important
   opacity: 1 !important
   font-weight: bold
-  font-family: arial,sans-serif
   border: 1px solid #4285f4
   border-radius: 2px
   background: #4584ED
@@ -125,6 +130,7 @@
   justify-content: space-between
   list-style: none
   padding: 28px;
+  background: #fff
   flex-wrap: wrap
   li 
     height: 100px
@@ -142,7 +148,7 @@
   margin: 0 auto
   height: 64px;
   width: 64px;
-  background-image: url(https://ssl.gstatic.com/gb/images/p1_82e7352c.png)
+  background-image: url(../img/apps-icons.png)
   background-size: 64px 2410px
   
   &.account
@@ -175,9 +181,7 @@
 .app-title
   height: 20px
   text-align: center
-  color: rgba(0,0,0,0.87);
-  font-family: arial,sans-serif;
-  font-size: 13px
+  color: rgba(0,0,0,0.87)
   text-decoration: none
   &:visited
     color: rgba(0,0,0,0.87);
@@ -189,8 +193,97 @@
   height: 40px
   color: rgba(0,0,0,0.87)
   background: #f5f5f5;
-  cursor: pointer;
-  font-family: arial,sans-serif
-  font-size: 13px
+  cursor: pointer
   &:visited
     text-decoration: none
+
+.main
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: flex-start
+  height: calc(100vh - 46px - 40px)
+  width: 100%
+
+.google-logo
+  display: block
+  height: 92px;
+  width: 272px;
+  margin-top: 152px;
+
+.search-bar-wrapper
+  display: flex
+  align-items: center
+  width: 584px
+  height: 44px
+  margin-top: 27px
+  box-sizing: border-box
+  padding: 2px
+  padding-left: 16px;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+  &:hover
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+  &:focus-within
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+
+.search-bar
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  height: 40px;
+  width: 530px;
+  outline: none;
+
+.mic-logo
+  height: 24px
+  width: 54px
+  cursor: pointer
+  background: url(../img/mic.png) no-repeat;
+  background-position: center; 
+  background-size: 24px 24px;
+
+.buttons-wrapper
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 584px
+  height: 58px
+  padding-top: 21px
+
+
+.button
+  display: flex
+  align-items: center
+  height: 36px;
+  min-width: 54px;
+  padding: 0 16px;
+  box-sizing: border-box
+  border-radius: 2px;
+  margin: 0 4px;
+  cursor: default
+  color: #757575
+  font-weight: bold;
+  background-color: #f2f2f2;
+  &:hover
+    outline: 1px solid #c6c6c6;
+    background-color: #f8f8f8;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1) 
+    color: #222;
+  
+.footer
+  display: flex
+  justify-content: space-between
+  height: 40px
+  padding-right: 27px
+  background: #f2f2f2;
+  border: 1px solid rgb(228, 228, 228) 
+
+.footer-link
+  line-height: 40px;
+  padding-left: 27px
+  color: rgb(102, 102, 102)
+  text-decoration: none
+  &:hover
+    text-decoration: underline;
